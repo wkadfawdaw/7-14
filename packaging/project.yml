@@ -1,0 +1,27 @@
+name: FundValueApp
+options:
+  bundleIdPrefix: com.example
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: 16.0
+    SWIFT_VERSION: 5.9
+    TARGETED_DEVICE_FAMILY: "1,2"
+
+targets:
+  FundValueApp:
+    type: application
+    platform: iOS
+    sources:
+      - FundValueApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.FundValueApp
+        INFOPLIST_KEY_CFBundleDisplayName: 基金估值
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+    scheme:
+      gatherCoverageData: false
+      testTargets: []
